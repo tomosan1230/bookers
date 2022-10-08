@@ -1,4 +1,4 @@
-<body>
+
   <p id="notice"></p>
   <p>
     <strong>本のタイトル：</strong>
@@ -9,4 +9,7 @@
     <%= @book.body %>
   </p>
 
+  <%= link_to "Edit", edit_book_path(@book.id) %>
+  |
+  <%= link_to "Back", "/books" %>
 </body>
