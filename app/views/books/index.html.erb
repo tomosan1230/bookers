@@ -1,0 +1,49 @@
+<body>
+  <p id="notice"></p>
+  <h1>Books</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Body</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+    
+    <tbody>
+      <tr>
+        <td>title1</td>
+        <td>プログラマ入門者は必読</td>
+        <td>
+          <a class="show:id" href="">Show</a>
+        </td>
+        <td>
+          <a class="edit:id" href="">Edit</a>
+        </td>
+        <td>Destroy</td>
+      </tr>
+    </tbody>
+    
+  </table>
+  
+  <h2>New book</h2>
+  
+  <form class="new_book" id="new_book" action="/books" accept-charset="UTF-8" method="post">
+    <input name="utf8" type="hidden" value="✓">
+    <input type="hidden" name="authenticity_token">
+    <div class="field">
+      <label for="book_title">本のタイトル</label>
+      <input class="bok_title" type="text" name="book[title]" id="book_title">
+    </div>
+    <div class="field">
+      <label for="book_body">感想</label>
+      <textarea class="book_body" name="book[body]" id="book_body"></textarea>
+    </div>
+  
+  </form>
+  
+  
+  
+  
+  
+</body>
