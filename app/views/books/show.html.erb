@@ -1,5 +1,6 @@
-
-  <p id="notice"></p>
+  <p id="notice">
+    <%= flash[:notice] %>
+  </p>
   <p>
     <strong>本のタイトル：</strong>
     <%= @book.title %>
@@ -12,4 +13,3 @@
   <%= link_to "Edit", edit_book_path(@book.id) %>
   |
   <%= link_to "Back", "/books" %>
-</body>
